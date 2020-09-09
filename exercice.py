@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 def capitaliser_pays(nom):
-    # TODO completer la fonction
     nom_list = nom.split()
     if len(nom_list) == 1:
         return (nom_list[0].lower()).capitalize()
