@@ -2,7 +2,16 @@
 # -*- coding: utf-8 -*-
 def capitaliser_pays(nom):
     # TODO completer la fonction
-    return nom
+    nom_list = nom.split()
+    if len(nom_list) == 1:
+        return (nom_list[0].lower()).capitalize()
+    else:
+        for i, mot in enumerate(nom_list):
+            if mot.lower() == "and":
+                nom_list[i] = mot.lower()
+            else :
+                nom_list[i] = (mot.lower()).capitalize()
+        return " ".join(nom_list)
 
 
 if __name__ == '__main__':
