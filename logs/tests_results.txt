@@ -32,6 +32,6 @@ First differing element 53:
 Diff is 894 characters long. Set self.maxDiff to None to see it. : Certaines lettres ne doivent pas etre en majuscule
 
 ----------------------------------------------------------------------
-Ran 4 tests in 0.004s
+Ran 4 tests in 0.002s
 
 FAILED (failures=2)
