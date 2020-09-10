@@ -1,37 +1,14 @@
-test_capitalize_first_letter (__main__.TestExercice) ... ok
-test_linking_words (__main__.TestExercice) ... ok
-test_lower_case_names (__main__.TestExercice) ... FAIL
-test_upper_case_names (__main__.TestExercice) ... FAIL
+test_upper_case_names (__main__.TestExercice) ... ERROR
 
 ======================================================================
-FAIL: test_lower_case_names (__main__.TestExercice)
+ERROR: test_upper_case_names (__main__.TestExercice)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "test_exercice.py", line 39, in test_lower_case_names
-    'Certaines lettres ne doivent pas etre en minuscules'
-AssertionError: Lists differ: ['Afg[613 chars]', 'Grenada', 'Guatemala', 'Guinea', 'Guinea-bissau', 'Guyana'] != ['Afg[613 chars]', 'Grenada', 'Guatemala', 'Guinea', 'Guinea-Bissau', 'Guyana']
-
-First differing element 53:
-'Guinea-bissau'
-'Guinea-Bissau'
-
-Diff is 894 characters long. Set self.maxDiff to None to see it. : Certaines lettres ne doivent pas etre en minuscules
-
-======================================================================
-FAIL: test_upper_case_names (__main__.TestExercice)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "test_exercice.py", line 48, in test_upper_case_names
-    'Certaines lettres ne doivent pas etre en majuscule'
-AssertionError: Lists differ: ['Afg[613 chars]', 'Grenada', 'Guatemala', 'Guinea', 'Guinea-bissau', 'Guyana'] != ['Afg[613 chars]', 'Grenada', 'Guatemala', 'Guinea', 'Guinea-Bissau', 'Guyana']
-
-First differing element 53:
-'Guinea-bissau'
-'Guinea-Bissau'
-
-Diff is 894 characters long. Set self.maxDiff to None to see it. : Certaines lettres ne doivent pas etre en majuscule
+  File "test_exercice.py", line 17, in test_upper_case_names
+    output = list(map(exercice.majuscule, self.words))
+AttributeError: module 'exercice' has no attribute 'majuscule'
 
 ----------------------------------------------------------------------
-Ran 4 tests in 0.002s
+Ran 1 test in 0.000s
 
-FAILED (failures=2)
+FAILED (errors=1)
